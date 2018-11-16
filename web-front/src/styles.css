@@ -1,9 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 .body {
-  background-color: #f1f2e3;
+  /* background-color: #f1f2e3; */
 }
 
 .margin-sides{
-  margin-top: 50px;
-  margin-bottom: 50px;
+  /* margin-top: 50px;
+  margin-bottom: 50px; */
+}
+
+.signup-main {
+  width: 100%;
+  min-height: 70vh;
 }

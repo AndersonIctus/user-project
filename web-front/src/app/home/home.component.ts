@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavBarService } from '../general/nav-bar/nav-bar.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private navBarService: NavBarService
+  ) { }
 
   ngOnInit() {
+    this.navBarService.setAdministratorMenu(false);
   }
-
 }

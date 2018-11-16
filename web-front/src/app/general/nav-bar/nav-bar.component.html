@@ -1,0 +1,17 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" *ngIf="shouldShowNavBar$ | async as navBar">
+    <div class="container">
+      <a class="navbar-brand" routerLink="/home">Dev EXAM</a>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li routerLinkActive="active" class="nav-item" *ngIf="navBar.adminBar" >
+            <a class="nav-link" routerLink="/users">USERS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- <a class="nav-link" routerLink="/login">LogIn</a> -->
+
+</nav>

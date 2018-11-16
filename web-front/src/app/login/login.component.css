@@ -1,0 +1,62 @@
+
+.signup-secti {
+  padding-top: 9%;
+  padding-bottom: 1%;
+}
+
+.sign-up-input {
+  border-radius: 2px;
+  border: solid 1px #d4d4d4;
+  height: 50px;
+  margin-bottom: 14px;
+}
+
+.sign-up-btn {
+  border-radius: 2px;
+  border: solid 1px #0ebac5;
+  height: 50px;
+  background: #0ebac5;
+  color: #fff;
+  text-align: center;
+  font-family: 'Lato',sans-serif;
+  font-size: 15px;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.link-sect {
+  min-height: 53px;
+  padding: 0;
+}
+
+.login-in-link {
+  font-family: 'Lato',sans-serif;
+  font-size: 12px;
+  letter-spacing: .6px;
+  color: #666;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.login-in-link span.right {
+  float: right;
+}
+
+.google-sign-form {
+  padding: 0;
+}
+
+.login-titel {
+  font-family: 'Montserrat',sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1.3px;
+  color: #000;
+  margin-bottom: 32px;
+}

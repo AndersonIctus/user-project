@@ -1,0 +1,69 @@
+<div>
+  <br/>
+  <h3> You can change some informations about you here </h3>
+
+  <br/>
+  <div class="col-md-6 col-sm-12 col-md-push-6 bg-gray">
+    <div class="col-md-12 bg-white">
+      <div class="col-sm-12 google-sign-form">
+        <h1 class="signup-titel">UPDATE DETAILS</h1>
+      </div>
+      <form [formGroup]="formUser" (ngSubmit)="saveUser(formUser.value, formUser.valid)" >
+          <div class="col-sm-12 google-sign-form">
+              <div class="m-0 p-0 row" >
+                  <div class="m-0 p-0 col-md-3 col-sm-2 text-right">
+                    <label class="form-label sign-up-label-2 pr-3" value="">Name </label>
+                  </div>
+                  <div class="m-0 p-0 col-md-9 col-sm-10">
+                    <input type="text" class="form-control sign-up-input-2 " formControlName="name" placeholder="Full Name" name="name" value="">
+                  </div>
+              </div>
+
+              <div class="m-0 p-0 row" >
+                  <div class="m-0 p-0 col-md-3 col-sm-2 text-right">
+                    <label class="form-label sign-up-label-2 pr-3" value="">E-mail </label>
+                  </div>
+                  <div class="m-0 p-0 col-md-9 col-sm-10">
+                      <input type="email" class="form-control sign-up-input-2 " formControlName="email" placeholder="Email" name="email" value="">
+                  </div>
+              </div>
+
+              <div class="m-0 p-0 row" >
+                  <div class="m-0 p-0 col-md-3 col-sm-2 text-right">
+                    <label class="form-label sign-up-label-2 pr-3" value="">Login </label>
+                  </div>
+                  <div class="m-0 p-0 col-md-9 col-sm-10">
+                      <input type="text" class="form-control sign-up-input-2 " formControlName="login" placeholder="Login" name="login" value="">
+                  </div>
+              </div>
+
+              <div class="m-0 p-0 row" >
+                  <div class="m-0 p-0 col-md-3 col-sm-2 text-right">
+                    <label class="form-label sign-up-label-2 pr-3" value="">Password </label>
+                  </div>
+                  <div class="m-0 p-0 col-md-9 col-sm-10">
+                      <input type="text" class="form-control sign-up-input-2 " formControlName="password" placeholder="Password" name="password">
+                  </div>
+              </div>
+
+              <div class="m-0 p-0 row" *ngIf="isAdminSession()" >
+                <div class="m-0 p-0 col-md-9 col-sm-4 text-right">
+                  <label class="form-label sign-up-label-2" value="">Admin?</label>
+                </div>
+                <div class="m-0 p-0 col-md-3 col-sm-4">
+                  <label class="switch">
+                    <input type="checkbox" formControlName="admin">
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="google-sign-form ">
+                <button class="sign-up-btn-2" [disabled]="!formUser.valid" [ngClass]="{disabled: !formUser.valid}"  type="submit">SAVE</button>
+              </div>
+          </div>
+      </form>
+    </div>
+  </div>
+
+</div>

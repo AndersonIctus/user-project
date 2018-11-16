@@ -1,0 +1,47 @@
+<br/>
+<br/>
+
+<div class="col-md-6 col-sm-12 col-md-push-6 bg-gray">
+  <div class="col-md-12 bg-white align-middle">
+      <div class="col-sm-12 google-sign-form">
+        <h1 class="signup-titel">REGISTER</h1>
+      </div>
+      <form [formGroup]="formUser" (ngSubmit)="saveUser(formUser.value, formUser.valid)" >
+        <div class="col-sm-12 google-sign-form">
+            <input type="text" class="form-control sign-up-input-2 " formControlName="name" placeholder="Full Name" name="name" value="">
+            <input type="email" class="form-control sign-up-input-2 " formControlName="email" placeholder="Email" name="email" value="">
+
+            <input type="text" class="form-control sign-up-input-2 " formControlName="login" placeholder="Login" name="login" value="">
+
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <input type="password" class="form-control sign-up-input-2 " formControlName="password" placeholder="Password" name="password">
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <input type="password" class="form-control sign-up-input-2 " placeholder="Confirm Password" name="confirm_password">
+                </div>
+            </div>
+
+            <div class="google-sign-form text-center">
+              <button class="sign-up-btn-2" [disabled]="!formUser.valid" [ngClass]="{disabled: !formUser.valid}"  type="submit">SIGN UP</button>
+            </div>
+        </div>
+
+        <div class="col-sm-12 link-sect text-right">
+            <p class="login-in-link test-left">Already have an account? <a routerLink="/login">Sign in</a></p>
+        </div>
+      </form>
+  </div>
+</div>
+
+
+<!--
+
+  name: string;
+  login: string;
+  password: string;
+
+  email: string;
+  admin: boolean = false;
+
+ -->
